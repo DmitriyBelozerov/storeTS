@@ -6,6 +6,6 @@ interface ErrorMessageProps {
 
 export function ErrorMessage({error}: ErrorMessageProps) {
     return (
-        <h2 style={{position: "absolute", color: "red", top: '50%', left: '50%'}}>{error}. Попробуйте перезагрузить страницу позднее</h2>
+        <h2 style={{position: "absolute", color: "red", top: '80%', left: '50%' }}>{error}</h2>
     )
 }
