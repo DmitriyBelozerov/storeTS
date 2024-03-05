@@ -7,8 +7,6 @@ interface ProductProps {
 
 export function Product({ product }: ProductProps) {
     const [details, setDetails] = useState(false)
-    console.log(details);
-
 
     return (
         <>
@@ -19,7 +17,9 @@ export function Product({ product }: ProductProps) {
                 <button className="py-2 px-4 border bg-yellow-400" onClick={() => setDetails(prev=>!prev)}>
                     {!details ? "Show Details" : "Hide Details"}
                 </button>
-                {details && <div>{product.description}</div>}
+                {details && <div>{product.description}
+                    <span style={{margin: '6px', fontWeight: 'bold'}}>Rate: {product.rating.rate}</span>
+                </div>}
 
             </div>
 
