@@ -1,0 +1,12 @@
+@import '../../reset';
+
+.product-list__button-add-new-product {
+    position: fixed;
+    top: 60px;
+    right: 10px;
+    border-radius: 50%;
+    @extend %circle-size;
+    background: $color-red;
+    color: $color-white;
+    border: none;
+}

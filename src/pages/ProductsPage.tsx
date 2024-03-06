@@ -1,4 +1,4 @@
-import { useContext} from 'react';
+import { useContext } from 'react';
 
 import { Product } from '../components/Product';
 import { Loader } from '../components/Loader';
@@ -20,10 +20,10 @@ export function ProductPage() {
     }
 
     return (
-        <div className='container'>
+        <div className='product-list'>
             {loading && <Loader />}
             {errorMessage && <ErrorMessage error={errorMessage} />}
-            <button className='fixed top-20 right-5 rounded-full bg-red-700 text-white w-20' onClick={open}>+</button>
+            <button className='product-list__button-add-new-product' onClick={open}>+</button>
 
             {products.map(el => <Product product={el} key={el.id} />)}
             {modal && <Modal title="Create new product" onClose={() => close()}>

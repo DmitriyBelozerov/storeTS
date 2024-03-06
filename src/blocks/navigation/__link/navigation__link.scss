@@ -1,0 +1,15 @@
+// .navigation__link:has(+ .navigator__link) {
+//     margin-bottom: 5px;
+// }
+
+@import '../../reset';
+
+.navigation__link {
+    margin-right: 10px;
+    color: $color-white;
+    text-decoration: none;
+}
+
+.navigation__link.active {
+    color: rgb(206, 206, 206);
+}

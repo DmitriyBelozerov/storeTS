@@ -1,0 +1,8 @@
+$color-white: white;
+$color-red: red;
+
+$pixel-circle: 40px;
+%circle-size {
+  width: $pixel-circle;
+  height: $pixel-circle;
+}

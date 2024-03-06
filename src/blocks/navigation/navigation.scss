@@ -1,0 +1,11 @@
+@import '../reset';
+
+.navigation {
+    color: $color-white;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+    background-color: grey;
+    align-items: center;
+}
