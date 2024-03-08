@@ -1,6 +1,9 @@
+@import url(./vendor/normalize.css);
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url(./blocks/navigation/navigation.scss);
 @import url(./blocks/navigation/__title/navigation__title.scss);
 @import url(./blocks/navigation/__link/navigation__link.scss);
+@import url(./blocks/product-list/product-list.scss);
 @import url(./blocks/product-list/__button-add-new-product/product-list__button-add-new-product.scss);
 @import url(./blocks/product/__image/product__image.scss);
 @import url(./blocks/product/product.scss);
@@ -13,3 +16,4 @@
 @import url(./blocks/form/form.scss);
 @import url(./blocks/form/__input/form__input.scss);
 @import url(./blocks/form/__button-submit/form__button-submit.scss);
+@import url(./blocks/about/about.scss);

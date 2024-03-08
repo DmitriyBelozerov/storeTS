@@ -16,10 +16,10 @@ const productData: IProduct = {
 }
 
 interface CreateProductProps {
-    onCreate: (product: IProduct)=> void
+    onCreate: (product: IProduct) => void
 }
 
-export function CreateProduct({onCreate}:CreateProductProps) {
+export function CreateProduct({ onCreate }: CreateProductProps) {
     const [value, setValue] = useState('');
     const [error, setError] = useState('')
 
@@ -27,7 +27,7 @@ export function CreateProduct({onCreate}:CreateProductProps) {
     async function handleSubmit(e: React.FormEvent) {
         e.preventDefault();
         setError('');
-        if(value.trim().length === 0) {
+        if (value.trim().length === 0) {
             setError('Please enter value title');
             setValue('')
             return
@@ -39,7 +39,6 @@ export function CreateProduct({onCreate}:CreateProductProps) {
     }
 
     const handleChangeValue = (e: any) => {
-
         setValue(e.target.value)
     }
 
@@ -49,9 +48,8 @@ export function CreateProduct({onCreate}:CreateProductProps) {
                 value={value}
                 onChange={handleChangeValue}
             />
-                
             <button className="form__button-submit" type='submit' >Create</button>
-            {error && <ErrorMessage error={error}/>}
+            {error && <ErrorMessage error={error} />}
         </form>
     )
 }

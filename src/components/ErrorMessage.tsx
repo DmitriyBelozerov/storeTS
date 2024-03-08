@@ -4,8 +4,8 @@ interface ErrorMessageProps {
     error: string
 }
 
-export function ErrorMessage({error}: ErrorMessageProps) {
+export function ErrorMessage({ error }: ErrorMessageProps) {
     return (
-        <h2 style={{position: "absolute", color: "red", top: '80%', left: '50%' }}>{error}</h2>
+        <span style={{ color: "red", margin: "4px" }}>{error}</span>
     )
 }
