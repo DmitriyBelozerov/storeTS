@@ -8,18 +8,21 @@ interface ProductProps {
 export function Product({ product }: ProductProps) {
     const [details, setDetails] = useState(false)
 
+    const productButtonClass = details ? "product__button-details product__button-details_hide" : "product__button-details";
+    const productButtonName = !details ? "Show Details" : "Hide Details";
+
     return (
         <>
-            <div className="border py-2 px-4 flex flex-col mb-2">
-                <img className="w-20 h-20" src={product.image} alt={product.title} />
+            <div className="product">
+                <img className="product__image" src={product.image} alt={product.title} />
                 <p>{product.title}</p>
-                <p className="font-bold">{product.price}$</p>
-                <button className="py-2 px-4 border bg-yellow-400" onClick={() => setDetails(prev => !prev)}>
-                    {!details ? "Show Details" : "Hide Details"}
+                <p className="product__price">{product.price}$</p>
+                <button className={productButtonClass} onClick={() => setDetails(prev => !prev)}>
+                    {productButtonName}
                 </button>
                 {details &&
                     <div>{product.description}
-                        <span style={{ margin: '6px', fontWeight: 'bold' }}>Rate: {product?.rating?.rate}</span>
+                        <span className="product__rate">Rate: {product?.rating?.rate}</span>
                     </div>}
 
             </div>

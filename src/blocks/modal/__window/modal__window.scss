@@ -1,0 +1,14 @@
+@import "../../reset";
+
+.modal__window {
+  border-radius: 5px;
+  border: none;
+  width: 70%;
+  max-width: 500px;
+  padding: 10px;
+  background: $color-bg;
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}

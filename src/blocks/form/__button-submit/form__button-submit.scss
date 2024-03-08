@@ -1,0 +1,11 @@
+@import '../../reset';
+
+.form__button-submit {
+    border: none;
+    padding: 4px;
+    background: $color-btn-active;
+}
+
+.form__button-submit:hover {
+    background: yellow;
+}

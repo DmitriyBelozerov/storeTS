@@ -1,0 +1,12 @@
+@import '../reset';
+
+.product {
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 4px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(240, 240, 240);
+}

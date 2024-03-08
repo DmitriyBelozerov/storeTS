@@ -44,13 +44,13 @@ export function CreateProduct({onCreate}:CreateProductProps) {
     }
 
     return (
-        <form onSubmit={handleSubmit} className="flex column row">
-            <input className="border py-2 px-4 mb-2" placeholder="Enter your product ..." type="text"
+        <form onSubmit={handleSubmit} className="form">
+            <input className="form__input" placeholder="Enter your product ..." type="text"
                 value={value}
                 onChange={handleChangeValue}
             />
                 
-            <button className="border py-2 px-4 bg-yellow-400 outline-0 hover:bg-yellow-600" type='submit' >Create</button>
+            <button className="form__button-submit" type='submit' >Create</button>
             {error && <ErrorMessage error={error}/>}
         </form>
     )
